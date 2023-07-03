@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <div class = container>
+  <div class="flex">
+    <div class="firstText">
+      <label for="text-input">Текст:</label>
+      <textarea id="text-input" class="w-full h-40"></textarea>
+      <div class="button">
+      <button id="send-button">Отправить</button>
+    </div>
+    </div>
+    <div class="secondText">
+      <label for="processed-text">Обработанный текст: "слово + )"</label>
+      <textarea id="processed-text" class="w-full h-40" readonly></textarea>
+    </div>
+  </div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
